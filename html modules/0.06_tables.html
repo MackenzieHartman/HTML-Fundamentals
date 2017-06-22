@@ -1,0 +1,125 @@
+<!-- Module #6: tables -->
+Bronze:
+Create a file called 0.06_tables.html.
+In that file create a table with no styling. There should be columns for Name, Occupation, and Years of Experience. 
+Add a few names and details to the table, like the nasty looking one below:
+<!-- ============================================================================================================= -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tables</title>
+	</head>
+		<style>
+			table, td, th, tr {border: 1px solid black; padding 15px;}
+			table { border-collapse: collapse}
+			th, td {padding: 15px;}
+		</style>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Occupation</th>
+					<th>Years of Experience</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Aurie Rahimzadeh</td>
+					<td>Software Architech</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>Jenn Aikens</td>
+					<td>Management</td>
+					<td>15</td>
+				</tr>
+			</tbody>		
+		</table>
+	</body>
+</html>
+
+<br>
+<!-- ============================================================================================================= -->
+<!-- Silver: -->
+<!-- Create another table, for practice, and add some simple border styling to it. -->
+<!-- Make columns for Show, Genre, & Rating. -->
+<!-- It should look like this: -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tables</title>
+	</head>
+		<style>
+			table, td, th, tr {border: 1px solid black; padding 15px;}
+			table { border-collapse: collapse}
+			th, td {padding: 15px;}
+		</style>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Show</th>
+					<th>Genre</th>
+					<th>Rating</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>The Walking Dead</td>
+					<td>Horror/Drama</td>
+					<td>R</td>
+				</tr>
+				<tr>
+					<td>Breaking Bad</td>
+					<td>Action/Suspense</td>
+					<td>R</td>
+				</tr>	
+			<tbody>
+		</table>
+	</body>
+</html>
+
+<br>
+<!-- ============================================================================================================= -->
+<!-- Gold: -->
+<!-- Use Bootstrap to make a nice looking table: -->
+<!-- Try to get it looking like this one: -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tables</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+<!-- 		<style>
+			table, td, th, tr {border: 1px solid black; padding 15px;}
+			table { border-collapse: collapse}
+			th, td {padding: 15px;}
+		</style> -->
+	<body>
+		<table>
+			<thead>
+				<tr class= "active">
+					<th>Name</th>
+					<th>Occupation</th>
+					<th>Years of Experience</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Aurie Rahimzadeh</td>
+					<td>Software Architech</td>
+					<td>20</td>
+				</tr>
+				<tr class= "success">
+					<td>Jenn Aikens</td>
+					<td>Management</td>
+					<td>15</td>
+				</tr>
+			</tbody>		
+		</table>
+	</body>
+</html>
